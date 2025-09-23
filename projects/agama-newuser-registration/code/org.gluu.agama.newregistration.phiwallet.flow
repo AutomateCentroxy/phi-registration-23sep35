@@ -43,11 +43,9 @@ maxJourney = Repeat 6 times max
                // User already registered with UID
                uiFeedback.errorMessage = "User already registered with this UserName"
      Otherwise
-          // User already registered with mail
-          Log "@info User already registered with mail: %" email
           uiFeedback.errorMessage = "Name should contain only alphabets"
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_cxprh = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_cxprh
+it_qwyht = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_qwyht
