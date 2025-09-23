@@ -29,11 +29,10 @@ maxJourney = Repeat 6 times max
           user = Call userRegistrationService getUserEntityByMail email
           // If user not found
           When user.empty is true
-               RRF "__________" 
-               Call __________#__________ 
+               // Check user already exist or not with username
+               userWithUid = Call userRegistrationService getUserEntityByUsername userName
                When 
                     When 
-                         Log "@ " __________
                     Otherwise
                          Log "@ " __________
                Otherwise
@@ -47,5 +46,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_qwyht = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_qwyht
+it_vahce = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_vahce
