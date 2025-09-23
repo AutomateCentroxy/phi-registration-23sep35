@@ -1,2 +1,3 @@
 Flow org.gluu.agama.newregistration.phiwallet
      Basepath ""
+     Timeout 3000 seconds
