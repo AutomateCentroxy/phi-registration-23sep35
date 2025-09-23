@@ -590,7 +590,7 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "userWithUid.empty",
+							"variable": "user.empty",
 							"operator": "is",
 							"dataValue": "true",
 							"combinator": "none"
@@ -602,14 +602,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "user not found"
+					"comment": "If user not found"
 				}
 			},
 			"measured": {
 				"width": 110,
 				"height": 59
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1462,8 +1462,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2948.0335665364587,
-		"y": -746.4933635153702,
+		"x": -1805.0335665364587,
+		"y": -198.49336351537033,
 		"zoom": 0.9301873501731877
 	}
 }
