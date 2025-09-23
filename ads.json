@@ -15,6 +15,9 @@
             "community"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "org.gluu.agama.newregistration.phiwallet": {}
+        },
+        "name": "agama-newuser-registration"
     }
 }
