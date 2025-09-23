@@ -388,24 +388,28 @@
 				"previousNodeId": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
 				"agamaData": {
 					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
+					"javaMethodName": "usernamePolicyMatch",
+					"javaVariableName": "userRegistrationService",
 					"exceptionVariableField": "",
-					"callType": "Call static method",
-					"arguments": [],
+					"callType": "Call method on instance",
+					"arguments": [
+						"userName"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "username policy check",
 					"hasComment": true,
-					"comment": ""
+					"comment": "check user name policy",
+					"asssignedVariableName": "isUsernamePolicyMatch"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
