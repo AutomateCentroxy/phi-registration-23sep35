@@ -23,8 +23,13 @@ maxJourney = Repeat 6 times max
      lang = userInput.lang
      // check user name policy
      isUsernamePolicyMatch = Call userRegistrationService usernamePolicyMatch userName
+     // if username policy match
+     When isUsernamePolicyMatch is true
+          Call __________#__________ 
+     Otherwise
+          uiFeedback.errorMessage = "Name should contain only alphabets"
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_mjhwf = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_mjhwf
+it_vntrt = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_vntrt
