@@ -29,6 +29,11 @@ maxJourney = Repeat 6 times max
           user = Call userRegistrationService getUserEntityByMail email
           // user not found
           When userWithUid.empty is true
+          Otherwise
+               // User already registered with UID
+               Log "@info User already registered with uid: %" userName
+               // User already registered with UID
+               uiFeedback.errorMessage = "User already registered with this UserName"
      Otherwise
           // User already registered with mail
           Log "@info User already registered with mail: %" email
@@ -36,5 +41,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_qjqfn = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_qjqfn
+it_ipbsh = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ipbsh
