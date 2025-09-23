@@ -159,8 +159,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 124
+				"width": 168,
+				"height": 120
 			},
 			"selected": false
 		},
@@ -196,7 +196,44 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed",
+			"type": "rrfNode",
+			"position": {
+				"x": 722,
+				"y": 279
+			},
+			"data": {
+				"id": "rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed",
+				"type": "rrfNode",
+				"position": {
+					"x": 732,
+					"y": 278
+				},
+				"previousNodeId": "repeatNode-d1aea406-39df-4e2b-bcfc-a8f5b446fee1",
+				"branching": "repeat",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "profile.ftlh",
+					"asssignedVariableName": "userInput",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Retrieve user profile  from UI",
+					"arguments": "uiFeedback"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -275,11 +312,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-8fe37113-8282-4103-857e-3b6e8a94601e"
+		},
+		{
+			"id": "repeatNode-d1aea406-39df-4e2b-bcfc-a8f5b446fee1-rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed",
+			"type": "default",
+			"source": "repeatNode-d1aea406-39df-4e2b-bcfc-a8f5b446fee1",
+			"target": "rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "repeat",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-d1aea406-39df-4e2b-bcfc-a8f5b446fee1_repeat"
 		}
 	],
 	"viewport": {
-		"x": 56.50999727425,
-		"y": 158.96497158874075,
+		"x": -419.49000272574995,
+		"y": 84.96497158874075,
 		"zoom": 0.9999999999999992
 	}
 }
