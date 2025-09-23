@@ -5,8 +5,8 @@
 			"type": "startNode",
 			"sourcePosition": "right",
 			"position": {
-				"x": 30,
-				"y": 30
+				"x": 1,
+				"y": 25
 			},
 			"deletable": false,
 			"data": {
@@ -32,16 +32,96 @@
 				}
 			},
 			"measured": {
+				"width": 168,
+				"height": 120
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-6a1350c6-6c67-402c-8648-bf917eb7a9cf",
+			"type": "assignmentNode",
+			"position": {
+				"x": 232,
+				"y": 28
+			},
+			"data": {
+				"id": "assignmentNode-6a1350c6-6c67-402c-8648-bf917eb7a9cf",
+				"type": "assignmentNode",
+				"position": {
+					"x": 280,
+					"y": 30
+				},
+				"previousNodeId": "startNode-20416861-794c-44d2-9a31-21b203b3a772",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{}",
+							"assignedVariableName": "uiFeedback"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{}",
+							"assignedVariableName": "emailObj"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "sendMail"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{matches: true, resent: false}",
+							"assignedVariableName": "uiInput"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Create  variable for UI feedback"
+				}
+			},
+			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": true,
+			"dragging": false
 		}
 	],
-	"edges": [],
+	"edges": [
+		{
+			"id": "startNode-20416861-794c-44d2-9a31-21b203b3a772-assignmentNode-6a1350c6-6c67-402c-8648-bf917eb7a9cf",
+			"type": "default",
+			"source": "startNode-20416861-794c-44d2-9a31-21b203b3a772",
+			"target": "assignmentNode-6a1350c6-6c67-402c-8648-bf917eb7a9cf",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_startNode-20416861-794c-44d2-9a31-21b203b3a772"
+		}
+	],
 	"viewport": {
-		"x": 167.33282760190116,
-		"y": 94.52203076011801,
-		"zoom": 1.5283765207651656
+		"x": 56.50999727425,
+		"y": 158.96497158874075,
+		"zoom": 0.9999999999999992
 	}
 }
