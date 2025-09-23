@@ -457,8 +457,8 @@
 			"id": "assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
 			"type": "assignmentNode",
 			"position": {
-				"x": 2634.0156386867297,
-				"y": 53.5167680047424
+				"x": 2234.785086244721,
+				"y": 76.24875675588883
 			},
 			"data": {
 				"id": "assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
@@ -467,7 +467,7 @@
 					"x": 2222,
 					"y": 87
 				},
-				"previousNodeId": "logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
+				"previousNodeId": "whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49",
 				"agamaData": {
 					"assignments": [
 						{
@@ -483,48 +483,14 @@
 					"displayName": "Name should contain only alphabets",
 					"hasComment": true,
 					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 124
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
-			"type": "logNode",
-			"position": {
-				"x": 2310.5685491487457,
-				"y": 64.31781058385775
-			},
-			"data": {
-				"id": "logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
-				"type": "logNode",
-				"position": {
-					"x": 2222,
-					"y": 87
 				},
-				"previousNodeId": "whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49",
-				"branching": "otherwise",
-				"agamaData": {
-					"logMessage": "\"User already registered with mail: %\" email",
-					"logLevel": "info",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "User already registered with mail"
-				}
+				"branching": "otherwise"
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -609,7 +575,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1195,44 +1161,6 @@
 			"sourceHandle": "source_whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49_success"
 		},
 		{
-			"id": "whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49-logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
-			"type": "default",
-			"source": "whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49",
-			"target": "logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "otherwise",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49_otherwise"
-		},
-		{
-			"id": "logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798-assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
-			"type": "default",
-			"source": "logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
-			"target": "assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
-			"label": "",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"sourceHandle": "source_logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
-			"targetHandle": "target_assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9"
-		},
-		{
 			"id": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f-whenNode-ebf52b4b-f537-4607-8437-5e6de3672398",
 			"type": "default",
 			"source": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f",
@@ -1459,11 +1387,29 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6_success"
+		},
+		{
+			"source": "whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49",
+			"sourceHandle": "source_whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49_otherwise",
+			"target": "assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
+			"targetHandle": "target_assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
+			"label": "otherwise",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49source_whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49_otherwise-assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9target_assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9"
 		}
 	],
 	"viewport": {
-		"x": -1805.0335665364587,
-		"y": -198.49336351537033,
-		"zoom": 0.9301873501731877
+		"x": -1414.2304421067174,
+		"y": -171.38079703172713,
+		"zoom": 0.703853946751275
 	}
 }
