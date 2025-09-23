@@ -1,1 +1,20 @@
-{}
+{
+    "agama-newuser-registration": {
+        "projectName": "agama-newuser-registration",
+        "description": "Designing an Agama Flow for seamless new user registration with validation and authentication.",
+        "type": "community",
+        "author": "AutomateCentroxy",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/AutomateCentroxy/phi-registration-23sep35",
+        "githubUri": "https://github.com/AutomateCentroxy/phi-registration-23sep35",
+        "license": "apache-2.0",
+        "lastUpdated": "1758626979940",
+        "tags": [
+            "jans",
+            "authentication",
+            "community"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
