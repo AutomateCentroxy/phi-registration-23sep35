@@ -524,15 +524,15 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
 			"id": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f",
 			"type": "callNode",
 			"position": {
-				"x": 2222,
-				"y": 537
+				"x": 2148.5529104620155,
+				"y": 479.7544743306886
 			},
 			"data": {
 				"id": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f",
@@ -566,7 +566,51 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "whenNode-ebf52b4b-f537-4607-8437-5e6de3672398",
+			"type": "whenNode",
+			"position": {
+				"x": 2386.6717636249887,
+				"y": 611.201563868673
+			},
+			"data": {
+				"id": "whenNode-ebf52b4b-f537-4607-8437-5e6de3672398",
+				"type": "whenNode",
+				"position": {
+					"x": 2472,
+					"y": 595
+				},
+				"previousNodeId": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "userWithUid.empty",
+							"operator": "is",
+							"dataValue": "true",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "user not found"
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -816,11 +860,30 @@
 			},
 			"sourceHandle": "source_logNode-f92ae35f-71ef-43d4-9b5d-43703cda1798",
 			"targetHandle": "target_assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9"
+		},
+		{
+			"id": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f-whenNode-ebf52b4b-f537-4607-8437-5e6de3672398",
+			"type": "default",
+			"source": "callNode-b653c091-a30f-41fe-a414-294028d5bc3f",
+			"target": "whenNode-ebf52b4b-f537-4607-8437-5e6de3672398",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-b653c091-a30f-41fe-a414-294028d5bc3f"
 		}
 	],
 	"viewport": {
-		"x": -1758.5643602210116,
-		"y": 92.24755137651835,
-		"zoom": 0.9258365501989381
+		"x": -2063.390233224048,
+		"y": -193.9371520525729,
+		"zoom": 0.9713680606057166
 	}
 }
