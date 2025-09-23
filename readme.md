@@ -1,0 +1,1 @@
+Registration with new feature
