@@ -32,8 +32,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 124
 			},
 			"selected": false,
 			"dragging": false
@@ -159,8 +159,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 124
 			},
 			"selected": false
 		},
@@ -369,7 +369,43 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "callNode-8d3d3eeb-5e76-46aa-adb8-3aa2c3c14b64",
+			"type": "callNode",
+			"position": {
+				"x": 1722,
+				"y": 279
+			},
+			"data": {
+				"id": "callNode-8d3d3eeb-5e76-46aa-adb8-3aa2c3c14b64",
+				"type": "callNode",
+				"position": {
+					"x": 1722,
+					"y": 279
+				},
+				"previousNodeId": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Call static method",
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			}
 		}
 	],
 	"edges": [
@@ -524,11 +560,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9"
+		},
+		{
+			"id": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb-callNode-8d3d3eeb-5e76-46aa-adb8-3aa2c3c14b64",
+			"type": "default",
+			"source": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
+			"target": "callNode-8d3d3eeb-5e76-46aa-adb8-3aa2c3c14b64",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb"
 		}
 	],
 	"viewport": {
-		"x": -1138.49000272575,
-		"y": 66.96497158874075,
-		"zoom": 0.9999999999999992
+		"x": -1157.5643602210116,
+		"y": 127.12255137651835,
+		"zoom": 0.9258365501989381
 	}
 }
