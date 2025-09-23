@@ -1,36 +1,47 @@
 {
-  "nodes": [
-    {
-      "id": "startNode-20416861-794c-44d2-9a31-21b203b3a772",
-      "type": "startNode",
-      "sourcePosition": "right",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "deletable": false,
-      "data": {
-        "id": "startNode-20416861-794c-44d2-9a31-21b203b3a772",
-        "type": "startNode",
-        "position": {
-          "x": 30,
-          "y": 40
-        },
-        "agamaData": {
-          "isTopLevelFlow": true,
-          "basepath": "",
-          "configParams": "{}",
-          "nodeIcon": "material-symbols:line-start-square",
-          "timeout": "",
-          "inputs": "",
-          "configs": "",
-          "flowname": "org.gluu.agama.newregistration.phiwallet",
-          "displayName": "org.gluu.agama.newregistration.phiwallet",
-          "creationDate": "23/09/2025",
-          "hasComment": true,
-          "comment": ""
-        }
-      }
-    }
-  ]
+	"nodes": [
+		{
+			"id": "startNode-20416861-794c-44d2-9a31-21b203b3a772",
+			"type": "startNode",
+			"sourcePosition": "right",
+			"position": {
+				"x": 30,
+				"y": 30
+			},
+			"deletable": false,
+			"data": {
+				"id": "startNode-20416861-794c-44d2-9a31-21b203b3a772",
+				"type": "startNode",
+				"position": {
+					"x": 30,
+					"y": 40
+				},
+				"agamaData": {
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{\"ACCOUNT_SID\":\"PUT_YOUR_TWILIO_ACCOUNT_SID_HERE\",\"AUTH_TOKEN\":\"PUT_YOUR_TWILIO_AUTH_TOKEN_HERE\",\"FROM_NUMBER\":\"PUT_YOUR_TWILIO_FROM_NUMBER_HERE\"}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "3000",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.newregistration.phiwallet",
+					"displayName": "org.gluu.agama.newregistration.phiwallet",
+					"creationDate": "23/09/2025",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
+		}
+	],
+	"edges": [],
+	"viewport": {
+		"x": 167.33282760190116,
+		"y": 94.52203076011801,
+		"zoom": 1.5283765207651656
+	}
 }
