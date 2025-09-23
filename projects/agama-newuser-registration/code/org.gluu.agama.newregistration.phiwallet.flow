@@ -27,6 +27,8 @@ maxJourney = Repeat 6 times max
      When isUsernamePolicyMatch is true
           // Check user already exist or not with mail
           user = Call userRegistrationService getUserEntityByMail email
+          // user not found
+          When userWithUid.empty is true
      Otherwise
           // User already registered with mail
           Log "@info User already registered with mail: %" email
@@ -34,5 +36,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_razrp = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_razrp
+it_qjqfn = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_qjqfn
