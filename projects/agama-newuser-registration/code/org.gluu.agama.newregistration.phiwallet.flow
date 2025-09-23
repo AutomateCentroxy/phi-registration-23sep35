@@ -25,11 +25,12 @@ maxJourney = Repeat 6 times max
      isUsernamePolicyMatch = Call userRegistrationService usernamePolicyMatch userName
      // if username policy match
      When isUsernamePolicyMatch is true
-          Call __________#__________ 
+          // Check user already exist or not with mail
+          user = Call userRegistrationService getUserEntityByMail email
      Otherwise
           uiFeedback.errorMessage = "Name should contain only alphabets"
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_vntrt = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_vntrt
+it_mlboe = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_mlboe
