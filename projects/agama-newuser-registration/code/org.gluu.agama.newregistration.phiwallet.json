@@ -690,15 +690,15 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
 			"id": "assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872",
 			"type": "assignmentNode",
 			"position": {
-				"x": 3189.1357350867934,
-				"y": 622.0430624625664
+				"x": 3470.39221961962,
+				"y": 620.6223131656197
 			},
 			"data": {
 				"id": "assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872",
@@ -707,8 +707,7 @@
 					"x": 3636.6717636249887,
 					"y": 619.201563868673
 				},
-				"previousNodeId": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
-				"branching": "otherwise",
+				"previousNodeId": "logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "material-symbols:equal",
@@ -728,109 +727,38 @@
 			"dragging": false
 		},
 		{
-			"id": "whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6",
-			"type": "whenNode",
-			"position": {
-				"x": 3196.2394815715265,
-				"y": 1063.5185666808864
-			},
-			"data": {
-				"id": "whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6",
-				"type": "whenNode",
-				"position": {
-					"x": 3636.6717636249887,
-					"y": 1069.201563868673
-				},
-				"previousNodeId": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
-				"branching": "success",
-				"agamaData": {
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
-					"conditions": [],
-					"nodeIcon": "ph:swap",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 110,
-				"height": 59
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "logNode-0883f5f4-6886-4d5f-b275-77d025a668a2",
+			"id": "logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
 			"type": "logNode",
 			"position": {
-				"x": 3522.9599436066455,
-				"y": 813.5185666808865
+				"x": 3196.2394815715265,
+				"y": 623.463811759513
 			},
 			"data": {
-				"id": "logNode-0883f5f4-6886-4d5f-b275-77d025a668a2",
+				"id": "logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
 				"type": "logNode",
 				"position": {
-					"x": 3886.6717636249887,
-					"y": 819.201563868673
+					"x": 3196.2394815715265,
+					"y": 623.463811759513
 				},
-				"previousNodeId": "whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6",
+				"previousNodeId": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"User already registered with uid: %\" userName",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 168,
-				"height": 120
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "assignmentNode-dc41e29f-9ac2-42a0-95c2-eb4778081437",
-			"type": "assignmentNode",
-			"position": {
-				"x": 3821.2654197028323,
-				"y": 807.8355694930998
-			},
-			"data": {
-				"id": "assignmentNode-dc41e29f-9ac2-42a0-95c2-eb4778081437",
-				"type": "assignmentNode",
-				"position": {
-					"x": 4136.671763624989,
-					"y": 819.201563868673
-				},
-				"previousNodeId": "logNode-0883f5f4-6886-4d5f-b275-77d025a668a2",
-				"agamaData": {
-					"assignments": [],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
+					"comment": "User already registered with UID"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
-			"dragging": false
+			"selected": true
 		},
 		{
 			"id": "callNode-3dd95ef0-bd9a-461f-8b33-c197e8ac3412",
@@ -1142,82 +1070,6 @@
 			"sourceHandle": "source_logNode-ab9ec5f3-ba39-42c6-b45d-bcb6db68e986"
 		},
 		{
-			"id": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc-assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872",
-			"type": "default",
-			"source": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
-			"target": "assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "otherwise",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc_otherwise"
-		},
-		{
-			"id": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc-whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6",
-			"type": "default",
-			"source": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
-			"target": "whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "Condition met",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc_success"
-		},
-		{
-			"id": "whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6-logNode-0883f5f4-6886-4d5f-b275-77d025a668a2",
-			"type": "default",
-			"source": "whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6",
-			"target": "logNode-0883f5f4-6886-4d5f-b275-77d025a668a2",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "otherwise",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-59a013d4-df03-4b9f-9bad-1f0fc07d3bc6_otherwise"
-		},
-		{
-			"id": "logNode-0883f5f4-6886-4d5f-b275-77d025a668a2-assignmentNode-dc41e29f-9ac2-42a0-95c2-eb4778081437",
-			"type": "default",
-			"source": "logNode-0883f5f4-6886-4d5f-b275-77d025a668a2",
-			"target": "assignmentNode-dc41e29f-9ac2-42a0-95c2-eb4778081437",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-0883f5f4-6886-4d5f-b275-77d025a668a2"
-		},
-		{
 			"source": "whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49",
 			"sourceHandle": "source_whenNode-79b33436-06dc-4d03-9012-2c606f9d1d49_otherwise",
 			"target": "assignmentNode-04914b29-ed2c-4eb1-acb7-cc06edffa0e9",
@@ -1271,11 +1123,49 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__callNode-3dd95ef0-bd9a-461f-8b33-c197e8ac3412source_callNode-3dd95ef0-bd9a-461f-8b33-c197e8ac3412-whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bctarget_whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc"
+		},
+		{
+			"id": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc-logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
+			"type": "default",
+			"source": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
+			"target": "logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc_otherwise"
+		},
+		{
+			"id": "logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d-assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872",
+			"type": "default",
+			"source": "logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
+			"target": "assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_logNode-881c5ca3-dd50-47f2-affa-c342a38e8e4d",
+			"targetHandle": "target_assignmentNode-3c62adf7-86e2-40df-80ea-037172b59872"
 		}
 	],
 	"viewport": {
-		"x": -1605.2304421067174,
-		"y": -269.38079703172707,
+		"x": -1626.2304421067174,
+		"y": -235.38079703172707,
 		"zoom": 0.703853946751275
 	}
 }
