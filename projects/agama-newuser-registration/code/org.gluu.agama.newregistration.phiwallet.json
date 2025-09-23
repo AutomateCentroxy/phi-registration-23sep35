@@ -273,6 +273,102 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9",
+			"type": "assignmentNode",
+			"position": {
+				"x": 1222,
+				"y": 279
+			},
+			"data": {
+				"id": "assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9",
+				"type": "assignmentNode",
+				"position": {
+					"x": 1222,
+					"y": 279
+				},
+				"previousNodeId": "callNode-e3812d9d-46c2-4866-807e-11cf504fc143",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.mail",
+							"assignedVariableName": "email"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.uid",
+							"assignedVariableName": "userName"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.referralCode",
+							"assignedVariableName": "referralCode"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.residenceCountry",
+							"assignedVariableName": "residenceCountry"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.phoneNumber",
+							"assignedVariableName": "phone"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Taking user variable",
+					"hasComment": true,
+					"comment": "Assign userName, email and password  to a variable"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
+			"type": "assignmentNode",
+			"position": {
+				"x": 1472,
+				"y": 279
+			},
+			"data": {
+				"id": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
+				"type": "assignmentNode",
+				"position": {
+					"x": 1472,
+					"y": 279
+				},
+				"previousNodeId": "assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.lang",
+							"assignedVariableName": "lang"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Taking user variable",
+					"hasComment": true,
+					"comment": "language attribute taking from User input"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -390,11 +486,49 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed"
+		},
+		{
+			"id": "callNode-e3812d9d-46c2-4866-807e-11cf504fc143-assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9",
+			"type": "default",
+			"source": "callNode-e3812d9d-46c2-4866-807e-11cf504fc143",
+			"target": "assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-e3812d9d-46c2-4866-807e-11cf504fc143"
+		},
+		{
+			"id": "assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9-assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
+			"type": "default",
+			"source": "assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9",
+			"target": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-83879e4b-2c99-448f-bf19-15959c803bb9"
 		}
 	],
 	"viewport": {
-		"x": -664.49000272575,
-		"y": 80.96497158874075,
+		"x": -1138.49000272575,
+		"y": 66.96497158874075,
 		"zoom": 0.9999999999999992
 	}
 }
