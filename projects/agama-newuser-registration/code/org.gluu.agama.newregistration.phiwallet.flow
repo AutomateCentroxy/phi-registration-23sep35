@@ -33,10 +33,9 @@ maxJourney = Repeat 6 times max
                userWithUid = Call userRegistrationService getUserEntityByUsername userName
                // user not found
                When userWithUid.empty is true
-                    When 
-                    Otherwise
-                         Log "@ " __________
                Otherwise
+                    // User already registered with UID
+                    Log "@info User already registered with uid: %" userName
           Otherwise
                // User already registered with UID
                Log "@info User already registered with uid: %" userName
@@ -47,5 +46,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_oghdi = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_oghdi
+it_jlfik = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_jlfik
