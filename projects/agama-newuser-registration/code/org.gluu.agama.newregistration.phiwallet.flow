@@ -21,9 +21,10 @@ maxJourney = Repeat 6 times max
      phone = userInput.phoneNumber
      // language attribute taking from User input
      lang = userInput.lang
-     Call __________#__________ 
+     // check user name policy
+     isUsernamePolicyMatch = Call userRegistrationService usernamePolicyMatch userName
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_oayzv = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_oayzv
+it_mjhwf = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_mjhwf
