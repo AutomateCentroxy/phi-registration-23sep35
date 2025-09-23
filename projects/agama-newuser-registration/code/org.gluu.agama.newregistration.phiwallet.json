@@ -232,8 +232,48 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "callNode-e3812d9d-46c2-4866-807e-11cf504fc143",
+			"type": "callNode",
+			"position": {
+				"x": 972,
+				"y": 279
+			},
+			"data": {
+				"id": "callNode-e3812d9d-46c2-4866-807e-11cf504fc143",
+				"type": "callNode",
+				"position": {
+					"x": 972,
+					"y": 279
+				},
+				"previousNodeId": "rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed",
+				"agamaData": {
+					"javaClassName": "org.gluu.agama.user.UserRegistration",
+					"javaMethodName": "getInstance",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Call static method",
+					"arguments": [
+						"conf"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "create an instance of Registration service",
+					"asssignedVariableName": "userRegistrationService"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -331,11 +371,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-d1aea406-39df-4e2b-bcfc-a8f5b446fee1_repeat"
+		},
+		{
+			"id": "rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed-callNode-e3812d9d-46c2-4866-807e-11cf504fc143",
+			"type": "default",
+			"source": "rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed",
+			"target": "callNode-e3812d9d-46c2-4866-807e-11cf504fc143",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-5fc0ceb4-e6b9-4a55-aa41-0888f81f21ed"
 		}
 	],
 	"viewport": {
-		"x": -419.49000272574995,
-		"y": 84.96497158874075,
+		"x": -664.49000272575,
+		"y": 80.96497158874075,
 		"zoom": 0.9999999999999992
 	}
 }
