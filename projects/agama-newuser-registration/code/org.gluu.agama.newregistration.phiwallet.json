@@ -631,7 +631,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"User already registered with this UserName\"",
+							"assignmentExpression": "\"User already registered with this Email\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -648,7 +648,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-2ead400d-1a30-4b60-ba7d-8f5b064993bc",
@@ -4926,8 +4926,8 @@
 		}
 	],
 	"viewport": {
-		"x": 142.0152037395428,
-		"y": 155.89292630364082,
-		"zoom": 0.8681402276010426
+		"x": -3087.7735992561275,
+		"y": -293.87651620681856,
+		"zoom": 1.5073349095583783
 	}
 }
