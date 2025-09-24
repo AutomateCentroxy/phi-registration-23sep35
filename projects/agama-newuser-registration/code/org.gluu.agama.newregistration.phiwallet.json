@@ -2156,7 +2156,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-0865413b-637f-444b-989d-c472f1f27ba2",
@@ -2175,21 +2175,22 @@
 				"previousNodeId": "whenNode-96042361-6391-4bf2-bf27-6a79224cfc33",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"User registration failed. Error : %\" E",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Registration failed log"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3",
