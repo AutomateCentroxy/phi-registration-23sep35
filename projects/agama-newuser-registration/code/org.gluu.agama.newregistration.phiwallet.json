@@ -1265,7 +1265,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-32dc9da6-7480-4e53-91ad-1a4aa6967980",
@@ -1284,12 +1284,12 @@
 				"previousNodeId": "assignmentNode-5653d749-e216-4a23-b2e4-93077aef949f",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "",
-					"maxIterationVariableName": "",
+					"maxIteration": "4",
+					"maxIterationVariableName": "EmailMax",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "EmailMax",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1297,7 +1297,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-2dc40f8a-e32b-4bab-8ed8-2944c746d875",
@@ -1316,12 +1317,18 @@
 				"previousNodeId": "repeatNode-32dc9da6-7480-4e53-91ad-1a4aa6967980",
 				"branching": "continue",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"You have reached the maximun email OTP verification\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Max attempted",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1329,7 +1336,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-2e9676df-925c-431d-b285-a75f7601c63e",
@@ -2428,8 +2436,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3492.1842154121714,
-		"y": -982.710917205525,
+		"x": -3856.1842154121714,
+		"y": -1011.710917205525,
 		"zoom": 0.7834971869493407
 	}
 }
