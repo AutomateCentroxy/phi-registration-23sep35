@@ -2374,7 +2374,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-93d232a6-f964-438c-ac5a-5668051188e8",
@@ -2393,12 +2393,12 @@
 				"previousNodeId": "assignmentNode-d37e68e4-0368-45c1-9a5c-775c5e8a693f",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "",
-					"maxIterationVariableName": "",
-					"nodeColor": "",
+					"maxIteration": "4",
+					"maxIterationVariableName": "maxSMS",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Valid sms OTP check",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2406,7 +2406,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-8655f3b0-c352-4e73-af6a-f241a0322b47",
@@ -4277,8 +4278,8 @@
 		}
 	],
 	"viewport": {
-		"x": -6845.66646175773,
-		"y": -1510.7545493014222,
+		"x": -7230.666461757731,
+		"y": -1525.7545493014222,
 		"zoom": 0.7834971869493407
 	}
 }
