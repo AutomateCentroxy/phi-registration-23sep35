@@ -84,7 +84,8 @@ maxJourney = Repeat 6 times max
                                                   Log "@ " __________
                                                   RRF "__________" 
                                                   Log "@ " __________
-                                             Log "@ " __________
+                                             // Registration failed log
+                                             Log "@info User registration failed. Error : %" E
                                         Otherwise
                                              Log "@info Invalid OTP, Please Try Again!"
                                              // Invalid OTP, Please Try Again!
@@ -92,8 +93,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_voims = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_voims
+                              it_rdnzm = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_rdnzm
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -116,5 +117,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_iigzu = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_iigzu
+it_ehlrb = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ehlrb
