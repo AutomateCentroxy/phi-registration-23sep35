@@ -2289,7 +2289,7 @@
 						"phone"
 					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "sent sms otp",
@@ -3427,8 +3427,8 @@
 		}
 	],
 	"viewport": {
-		"x": -8867.10440759559,
-		"y": -1961.7422468029545,
-		"zoom": 1.0570180405613803
+		"x": -1638.055583432349,
+		"y": -377.06026632086207,
+		"zoom": 0.5
 	}
 }
