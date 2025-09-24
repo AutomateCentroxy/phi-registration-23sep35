@@ -86,7 +86,8 @@ maxJourney = Repeat 6 times max
                                                   uiFeedback.infoMessage = "User Account created successfully!"
                                                   // sent sms otp
                                                   smsOtpSend = Call userRegistrationService sendOTPCode phone
-                                                  Log "@ " __________
+                                                  // The OTP Code has been send to user.
+                                                  Log "@info OTP generated and send to: " phone
                                                   Repeat __________ times max
                                                        RRF "__________" 
                                                        When 
@@ -110,8 +111,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_krcrx = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_krcrx
+                              it_gqyrj = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_gqyrj
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -134,5 +135,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_ebccm = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_ebccm
+it_zxbgf = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_zxbgf
