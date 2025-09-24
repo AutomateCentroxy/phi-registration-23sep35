@@ -1894,7 +1894,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1986,13 +1986,13 @@
 				"previousNodeId": "whenNode-848f25b2-038f-41dd-8e98-f4f6e0838643",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Email Otp Verified\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email Otp Verified",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2000,7 +2000,8 @@
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-4563ebef-f21f-49bd-8ba4-69dc607c9e79",
@@ -3074,8 +3075,8 @@
 		}
 	],
 	"viewport": {
-		"x": -6004.301103158437,
-		"y": -1304.287981213914,
-		"zoom": 0.9100388240808991
+		"x": -5180.579094843839,
+		"y": -1140.4041640451358,
+		"zoom": 0.7834971869493407
 	}
 }
