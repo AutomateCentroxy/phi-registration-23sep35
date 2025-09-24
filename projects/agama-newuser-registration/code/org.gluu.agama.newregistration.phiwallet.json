@@ -2514,7 +2514,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "finishNode-4407c9be-644b-41ea-9e79-6ef115f50fc7",
@@ -2532,21 +2532,24 @@
 				},
 				"previousNodeId": "assignmentNode-f982b77b-1017-4f40-903c-a776f3cd326d",
 				"agamaData": {
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "SMS OTP error",
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "",
+					"returnVariable": "it_otpmax",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "rrfNode-a2217224-e9a1-40e8-8613-81c0492c5f2f",
