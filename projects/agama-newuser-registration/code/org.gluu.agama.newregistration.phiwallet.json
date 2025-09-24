@@ -1708,7 +1708,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-8e2fbbee-fffc-4cac-b8d8-3edbbd5d53b1",
@@ -1727,21 +1727,22 @@
 				"previousNodeId": "whenNode-c6f92828-cad7-4981-ae05-91ddd639bc12",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"New OTP code send successfully!\" otpCode",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Log code resend"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-a8739fb4-fdf9-4561-a36a-3fb472b9f589",
