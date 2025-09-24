@@ -2475,7 +2475,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2494,12 +2494,18 @@
 				},
 				"previousNodeId": "logNode-dc846755-6229-4d30-953a-42ef558d361f",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
+							"assignedVariableName": "it_otpmax"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Max SMS Otp tried",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2507,7 +2513,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "finishNode-4407c9be-644b-41ea-9e79-6ef115f50fc7",
@@ -4282,8 +4289,8 @@
 		}
 	],
 	"viewport": {
-		"x": -7230.666461757731,
-		"y": -1525.7545493014222,
+		"x": -7408.666461757731,
+		"y": -1529.7545493014222,
 		"zoom": 0.7834971869493407
 	}
 }
