@@ -966,7 +966,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-1ad186bd-5fc5-4168-a09b-79a5cdaba1ed",
@@ -1027,20 +1027,28 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "userPassword",
+							"operator": "is",
+							"dataValue": "confirmPassword",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Matching password "
 				}
 			},
 			"measured": {
 				"width": 110,
 				"height": 59
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-4bb12047-c6fb-44d0-bb21-c643dc50b94b",
@@ -1135,8 +1143,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 124
+				"width": 168,
+				"height": 120
 			}
 		}
 	],
@@ -1673,8 +1681,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2556.841904427632,
-		"y": -642.7151697627392,
+		"x": -2816.8419044276316,
+		"y": -714.7151697627392,
 		"zoom": 0.7834971869493407
 	}
 }
