@@ -90,8 +90,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_rpnhc = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_rpnhc
+                              it_iywnx = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_iywnx
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -114,5 +114,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_xvoml = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_xvoml
+it_qdzne = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_qdzne
