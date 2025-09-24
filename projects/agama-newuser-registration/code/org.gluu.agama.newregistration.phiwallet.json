@@ -2039,7 +2039,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2058,8 +2058,8 @@
 				},
 				"previousNodeId": "assignmentNode-4563ebef-f21f-49bd-8ba4-69dc607c9e79",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"E-mail verification passed, initiating user provisioning flow \" userInput",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
@@ -2070,9 +2070,10 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 124
-			}
+				"width": 168,
+				"height": 120
+			},
+			"selected": true
 		}
 	],
 	"edges": [
