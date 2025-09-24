@@ -1742,7 +1742,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-a8739fb4-fdf9-4561-a36a-3fb472b9f589",
@@ -1760,20 +1760,27 @@
 				},
 				"previousNodeId": "logNode-8e2fbbee-fffc-4cac-b8d8-3edbbd5d53b1",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"A new OTP code has been send to you on your Email\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback about the error message to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-7dfd621b-2a6d-4aef-8113-e3fd8bc40ada",
