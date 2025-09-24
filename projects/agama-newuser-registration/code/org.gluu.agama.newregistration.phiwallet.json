@@ -985,7 +985,13 @@
 				"previousNodeId": "whenNode-cddb67af-dd30-4a81-8d29-cd59dbc3b9af",
 				"branching": "otherwise",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Password must be at least 6 characters long and contain at least one special character\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
@@ -998,7 +1004,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "whenNode-73e82e25-7e6f-4c01-a1ac-8c533d783458",
@@ -1666,8 +1673,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1584.6042951586173,
-		"y": -273.74063823328004,
-		"zoom": 0.580754365962861
+		"x": -2556.841904427632,
+		"y": -642.7151697627392,
+		"zoom": 0.7834971869493407
 	}
 }
