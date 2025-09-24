@@ -90,7 +90,7 @@ maxJourney = Repeat 6 times max
                                                   Log "@info OTP generated and send to: " phone
                                                   otpValidationResult = false
                                                   maxSMS = Repeat 4 times max
-                                                       RRF "__________" 
+                                                       otpCreds = RRF "smsOtp.ftlh" uiFeedback
                                                        When 
                                                             Log "@ " __________
                                                             Call __________#__________ 
@@ -113,8 +113,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_wwsnc = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_wwsnc
+                              it_mzbqn = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_mzbqn
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -137,5 +137,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_xotpx = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_xotpx
+it_jgwvn = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_jgwvn
