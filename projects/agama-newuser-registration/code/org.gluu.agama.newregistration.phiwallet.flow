@@ -40,7 +40,8 @@ maxJourney = Repeat 6 times max
                     confirmPassword = passwordInput.confirmPassword
                     // Password policy check
                     isPasswordPolicyMatch = Call userRegistrationService passwordPolicyMatch userPassword
-                    When 
+                    // if password policy match
+                    When isPasswordPolicyMatch is true
                          When 
                               Log "@ " __________
                          Otherwise
@@ -61,5 +62,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_vqdsw = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_vqdsw
+it_gngkm = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_gngkm
