@@ -2897,7 +2897,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-92466367-7d6a-461c-bed1-a6b8aaeae8bb",
@@ -3150,35 +3150,44 @@
 			"selected": false
 		},
 		{
-			"id": "assignmentNode-24ed0aba-0f91-4182-a656-028bdb8c1aac",
-			"type": "assignmentNode",
+			"id": "callNode-31574ac6-4598-493a-a170-b8917bce479f",
+			"type": "callNode",
 			"position": {
 				"x": 11686.028851420897,
 				"y": 2566.965291406014
 			},
 			"data": {
-				"id": "assignmentNode-24ed0aba-0f91-4182-a656-028bdb8c1aac",
-				"type": "assignmentNode",
+				"id": "callNode-31574ac6-4598-493a-a170-b8917bce479f",
+				"type": "callNode",
 				"position": {
 					"x": 11686.028851420897,
 					"y": 2566.965291406014
 				},
 				"previousNodeId": "logNode-201f2a43-db06-4270-98c0-61d705fb4620",
 				"agamaData": {
-					"assignments": [],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
+					"javaClassName": "",
+					"javaMethodName": "markPhoneAsVerified",
+					"javaVariableName": "userRegistrationService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"userName"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"asssignedVariableName": "phoneVerified"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4739,10 +4748,10 @@
 			"sourceHandle": "source_whenNode-76be041b-cfd8-4d9e-a541-fa828bdad760_success"
 		},
 		{
-			"id": "logNode-201f2a43-db06-4270-98c0-61d705fb4620-assignmentNode-24ed0aba-0f91-4182-a656-028bdb8c1aac",
+			"id": "logNode-201f2a43-db06-4270-98c0-61d705fb4620-callNode-31574ac6-4598-493a-a170-b8917bce479f",
 			"type": "default",
 			"source": "logNode-201f2a43-db06-4270-98c0-61d705fb4620",
-			"target": "assignmentNode-24ed0aba-0f91-4182-a656-028bdb8c1aac",
+			"target": "callNode-31574ac6-4598-493a-a170-b8917bce479f",
 			"labelBgPadding": [
 				8,
 				4
@@ -4759,8 +4768,8 @@
 		}
 	],
 	"viewport": {
-		"x": -8336.792912834759,
-		"y": -1665.359405987644,
+		"x": -8569.792912834759,
+		"y": -1796.359405987644,
 		"zoom": 0.7834971869493407
 	}
 }
