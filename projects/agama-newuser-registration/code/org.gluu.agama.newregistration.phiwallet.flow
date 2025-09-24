@@ -47,7 +47,8 @@ maxJourney = Repeat 6 times max
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
                               otpCode = Call userRegistrationService sendEmail email
-                              Log "@ " __________
+                              // The OTP Code has been send to user.
+                              Log "@info OTP generated and send to: " email
                               Repeat __________ times max
                                    Log "@ " __________
                                    RRF "__________" 
@@ -80,5 +81,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_fznmz = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_fznmz
+it_yrtlw = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_yrtlw
