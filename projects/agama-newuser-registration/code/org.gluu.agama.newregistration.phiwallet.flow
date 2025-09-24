@@ -45,16 +45,18 @@ maxJourney = Repeat 6 times max
                          // Matching password 
                          When userPassword is confirmPassword
                               Log "@info Send-Email-page-trigger"
-                              RRF "__________" 
-                              When 
+                              Call __________#__________ 
+                              Log "@ " __________
+                              Repeat __________ times max
                                    Log "@ " __________
-                                   Call __________#__________ 
+                                   RRF "__________" 
                                    When 
                                         Log "@ " __________
-                                   Log "@ " __________
-                              Otherwise
-                                   Log "@ " __________
-                                   When 
+                                        Call __________#__________ 
+                                   Otherwise
+                                        Log "@ " __________
+                              Log "@ " __________
+                              Finish __________
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -77,5 +79,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_auoed = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_auoed
+it_kvumv = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_kvumv
