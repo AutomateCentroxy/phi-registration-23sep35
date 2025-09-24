@@ -2019,12 +2019,18 @@
 				},
 				"previousNodeId": "logNode-93fbfd7d-dd0a-4265-a90b-bb63dd635b71",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "EmailOtpValidationResult"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "EmailOtpValidationResult",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2032,7 +2038,9 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "logNode-0ddc37b5-a3d2-4180-969f-d9dfe6000b78",
