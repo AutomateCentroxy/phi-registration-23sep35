@@ -2262,6 +2262,46 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "callNode-01f89555-7c5f-4210-ad5a-0301a06bb6f2",
+			"type": "callNode",
+			"position": {
+				"x": 8946.239481571527,
+				"y": 2105.463811759513
+			},
+			"data": {
+				"id": "callNode-01f89555-7c5f-4210-ad5a-0301a06bb6f2",
+				"type": "callNode",
+				"position": {
+					"x": 8946.239481571527,
+					"y": 2105.463811759513
+				},
+				"previousNodeId": "assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendOTPCode",
+					"javaVariableName": "userRegistrationService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"phone"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "sent sms otp",
+					"hasComment": true,
+					"comment": "sent sms otp",
+					"asssignedVariableName": "smsOtpSend"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -3365,11 +3405,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3"
+		},
+		{
+			"id": "assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf-callNode-01f89555-7c5f-4210-ad5a-0301a06bb6f2",
+			"type": "default",
+			"source": "assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf",
+			"target": "callNode-01f89555-7c5f-4210-ad5a-0301a06bb6f2",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf"
 		}
 	],
 	"viewport": {
-		"x": -10262.575440781562,
-		"y": -2263.682309794677,
-		"zoom": 1.2277356839150602
+		"x": -8867.10440759559,
+		"y": -1961.7422468029545,
+		"zoom": 1.0570180405613803
 	}
 }
