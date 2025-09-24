@@ -115,6 +115,8 @@ maxJourney = Repeat 6 times max
                                                                  phoneVerified = Call userRegistrationService markPhoneAsVerified userName
                                                                  // Show acknowledgement UI page for successful registration
                                                                  acknowledgementInput = RRF "acknowledgement.ftlh" 
+                                                                 // Finish the flow successfully
+                                                                 Log "@info Finish the flow successfully"
                                                             Otherwise
                                                                  // The maximum number of attempt has been reached.
                                                                  Log "@error Invalid code provided "
@@ -133,8 +135,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_ggiqz = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_ggiqz
+                              it_uaxlr = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_uaxlr
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -157,5 +159,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_imcbq = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_imcbq
+it_ryzac = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ryzac
