@@ -826,20 +826,22 @@
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "",
-					"asssignedVariableName": "",
+					"templatePath": "password.ftlh",
+					"asssignedVariableName": "passwordInput",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Retrieve user password from UI",
+					"arguments": "uiFeedback"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-f1d9bd8c-97a0-4362-985e-d7a35c8ff8ac",
@@ -1640,8 +1642,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1731.6042951586173,
-		"y": -395.74063823328015,
+		"x": -1530.6042951586173,
+		"y": -286.74063823328004,
 		"zoom": 0.580754365962861
 	}
 }
