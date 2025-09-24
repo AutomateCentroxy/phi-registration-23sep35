@@ -1780,7 +1780,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-7dfd621b-2a6d-4aef-8113-e3fd8bc40ada",
@@ -1799,13 +1799,13 @@
 				"previousNodeId": "whenNode-c6f92828-cad7-4981-ae05-91ddd639bc12",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Fail to resend new code to user. \" otpCode",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log error code",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1813,7 +1813,8 @@
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-4577da3d-aa22-471a-ae4a-709a6f9b5550",
@@ -1831,7 +1832,13 @@
 				},
 				"previousNodeId": "logNode-7dfd621b-2a6d-4aef-8113-e3fd8bc40ada",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
@@ -1844,7 +1851,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "whenNode-848f25b2-038f-41dd-8e98-f4f6e0838643",
