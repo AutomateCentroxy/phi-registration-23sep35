@@ -1194,7 +1194,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-2863180b-1fb3-46df-b60d-c4d7eed7e0f3",
@@ -1212,21 +1212,22 @@
 				},
 				"previousNodeId": "callNode-37eb1346-1105-402e-81fa-0ba21285c285",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP generated and send to: \" email",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email OTP code send",
 					"hasComment": true,
-					"comment": ""
+					"comment": "The OTP Code has been send to user."
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 124
-			}
+				"width": 168,
+				"height": 120
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-5653d749-e216-4a23-b2e4-93077aef949f",
