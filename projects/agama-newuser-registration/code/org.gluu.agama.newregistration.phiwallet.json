@@ -3067,7 +3067,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-b34dd2ba-4738-42f7-8ac2-783183a263e8",
@@ -3085,20 +3085,27 @@
 				},
 				"previousNodeId": "logNode-236d1cc2-c034-4ca4-ba83-708fca25c5b4",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Invalid code provided.\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Provide feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-201f2a43-db06-4270-98c0-61d705fb4620",
@@ -3117,13 +3124,13 @@
 				"previousNodeId": "whenNode-76be041b-cfd8-4d9e-a541-fa828bdad760",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP validated Successfully\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "OTP validated Successfully",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -3131,7 +3138,8 @@
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-24ed0aba-0f91-4182-a656-028bdb8c1aac",
@@ -4743,8 +4751,8 @@
 		}
 	],
 	"viewport": {
-		"x": -8359.792912834759,
-		"y": -1612.359405987644,
+		"x": -8336.792912834759,
+		"y": -1665.359405987644,
 		"zoom": 0.7834971869493407
 	}
 }
