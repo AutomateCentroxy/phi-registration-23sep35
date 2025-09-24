@@ -97,7 +97,8 @@ maxJourney = Repeat 6 times max
                                                             Call __________#__________ 
                                                             When 
                                                        Otherwise
-                                                            Log "@ " __________
+                                                            //  Add log entry with collected code in log file.
+                                                            Log "@info Information provided by the user is : " otpCreds.code
                                                             Call __________#__________ 
                                                             Log "@ " __________
                                                             When 
@@ -114,8 +115,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_povoi = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_povoi
+                              it_gmojl = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_gmojl
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -138,5 +139,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_hfajq = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_hfajq
+it_bbivc = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_bbivc
