@@ -2548,7 +2548,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2570,21 +2570,22 @@
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "",
-					"asssignedVariableName": "",
-					"nodeColor": "",
+					"templatePath": "smsOtp.ftlh",
+					"asssignedVariableName": "otpCreds",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "RRF",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"arguments": "uiFeedback"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -4292,8 +4293,8 @@
 		}
 	],
 	"viewport": {
-		"x": -7408.666461757731,
-		"y": -1529.7545493014222,
+		"x": -7343.666461757731,
+		"y": -1625.7545493014222,
 		"zoom": 0.7834971869493407
 	}
 }
