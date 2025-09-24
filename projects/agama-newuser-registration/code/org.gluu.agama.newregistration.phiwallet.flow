@@ -110,7 +110,7 @@ maxJourney = Repeat 6 times max
                                                             otpValidationResult = Call userRegistrationService validateOTPCode phone otpCreds.code
                                                             // Add log entry withvalidation result in log file.
                                                             Log "@info OTP validation result is:" otpValidationResult
-                                                            When 
+                                                            When otpValidationResult is true
                                                                  Log "@info OTP validated Successfully"
                                                             Otherwise
                                                                  // The maximum number of attempt has been reached.
@@ -130,8 +130,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_cmczu = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_cmczu
+                              it_ojzzw = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_ojzzw
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -154,5 +154,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_dkuny = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_dkuny
+it_zprpe = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_zprpe
