@@ -2577,7 +2577,7 @@
 					"descColor": "",
 					"displayName": "RRF",
 					"hasComment": true,
-					"comment": "",
+					"comment": " Show UI to collect OTP code from user.",
 					"arguments": "uiFeedback"
 				}
 			},
