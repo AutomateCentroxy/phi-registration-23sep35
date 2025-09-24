@@ -45,7 +45,8 @@ maxJourney = Repeat 6 times max
                          // Matching password 
                          When userPassword is confirmPassword
                               Log "@info Send-Email-page-trigger"
-                              Call __________#__________ 
+                              // sent Email otp
+                              otpCode = Call userRegistrationService sendEmail email
                               Log "@ " __________
                               Repeat __________ times max
                                    Log "@ " __________
@@ -79,5 +80,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_kvumv = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_kvumv
+it_fznmz = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_fznmz
