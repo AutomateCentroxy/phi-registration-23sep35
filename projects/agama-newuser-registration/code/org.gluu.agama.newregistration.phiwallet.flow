@@ -49,6 +49,8 @@ maxJourney = Repeat 6 times max
                               otpCode = Call userRegistrationService sendEmail email
                               // The OTP Code has been send to user.
                               Log "@info OTP generated and send to: " email
+                              // EmailOtpValidationResult = flase
+                              EmailOtpValidationResult = false
                               Repeat __________ times max
                                    Log "@ " __________
                                    RRF "__________" 
@@ -81,5 +83,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_yrtlw = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_yrtlw
+it_oealq = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_oealq
