@@ -17,6 +17,8 @@ public abstract class UserRegistration {
     public abstract boolean validateOTPCode(String phone, String code);
 
     public abstract String sendEmail(String to);
+    
+    public abstract String markPhoneAsVerified(String to);
 
     public abstract boolean checkIfUserExists(String username, String email);
 
