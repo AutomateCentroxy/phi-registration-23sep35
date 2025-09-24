@@ -1404,7 +1404,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-2b391fd7-bf02-4958-be0a-0abf2e9da352",
@@ -1423,21 +1423,22 @@
 				"previousNodeId": "repeatNode-32dc9da6-7480-4e53-91ad-1a4aa6967980",
 				"branching": "repeat",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Email OTP verification loop Started\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email loop Started",
 					"hasComment": true,
-					"comment": ""
+					"comment": "\"Email OTP verification loop Started\""
 				}
 			},
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-4d027964-35a4-4d5e-b86e-7bcefcc05c26",
@@ -2439,8 +2440,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3856.1842154121714,
-		"y": -1011.710917205525,
+		"x": -4036.1842154121714,
+		"y": -1098.710917205525,
 		"zoom": 0.7834971869493407
 	}
 }
