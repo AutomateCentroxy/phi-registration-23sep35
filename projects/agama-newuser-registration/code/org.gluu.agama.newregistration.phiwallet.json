@@ -2876,7 +2876,14 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "otpValidationResult",
+							"operator": "is",
+							"dataValue": "true",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -2889,7 +2896,8 @@
 			"measured": {
 				"width": 110,
 				"height": 59
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-92466367-7d6a-461c-bed1-a6b8aaeae8bb",
@@ -3127,7 +3135,7 @@
 					"logMessage": "\"OTP validated Successfully\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "OTP validated Successfully",
