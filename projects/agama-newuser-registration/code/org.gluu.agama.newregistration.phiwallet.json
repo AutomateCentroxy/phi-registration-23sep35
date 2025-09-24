@@ -841,7 +841,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-f1d9bd8c-97a0-4362-985e-d7a35c8ff8ac",
@@ -859,20 +859,32 @@
 				},
 				"previousNodeId": "rrfNode-0ebdc0de-17d3-4b7c-8eed-04ef552e3087",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "passwordInput.userPassword",
+							"assignedVariableName": "userPassword"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "passwordInput.confirmPassword",
+							"assignedVariableName": "confirmPassword"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Assign  password  to a variable"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "callNode-bc453677-2da2-4c40-a809-aad1617ea655",
@@ -891,24 +903,28 @@
 				"previousNodeId": "assignmentNode-f1d9bd8c-97a0-4362-985e-d7a35c8ff8ac",
 				"agamaData": {
 					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
+					"javaMethodName": "passwordPolicyMatch",
+					"javaVariableName": "userRegistrationService",
 					"exceptionVariableField": "",
-					"callType": "Call static method",
-					"arguments": [],
+					"callType": "Call method on instance",
+					"arguments": [
+						"userPassword"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Password policy check",
+					"asssignedVariableName": "isPasswordPolicyMatch"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "whenNode-cddb67af-dd30-4a81-8d29-cd59dbc3b9af",
