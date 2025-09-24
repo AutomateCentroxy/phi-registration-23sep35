@@ -88,6 +88,12 @@ maxJourney = Repeat 6 times max
                                                   smsOtpSend = Call userRegistrationService sendOTPCode phone
                                                   Log "@ " __________
                                                   Repeat __________ times max
+                                                       RRF "__________" 
+                                                       When 
+                                                       Otherwise
+                                                            Log "@ " __________
+                                                            Call __________#__________ 
+                                                            Log "@ " __________
                                                   Log "@ " __________
                                                   Log "@ " __________
                                                   Finish __________
@@ -100,8 +106,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_qklvt = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_qklvt
+                              it_yygvi = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_yygvi
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -124,5 +130,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_gyqzr = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_gyqzr
+it_pxpbh = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_pxpbh
