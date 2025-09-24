@@ -18,7 +18,7 @@ public abstract class UserRegistration {
 
     public abstract String sendEmail(String to);
     
-    public abstract String markPhoneAsVerified(String uid);
+    public abstract String markPhoneAsVerified(String userName);
 
     public abstract boolean checkIfUserExists(String username, String email);
 
