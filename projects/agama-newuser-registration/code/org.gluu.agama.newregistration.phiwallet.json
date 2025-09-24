@@ -1687,7 +1687,14 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "otpCode",
+							"operator": "is",
+							"dataValue": "null",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -1700,7 +1707,8 @@
 			"measured": {
 				"width": 110,
 				"height": 59
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-8e2fbbee-fffc-4cac-b8d8-3edbbd5d53b1",
@@ -3033,8 +3041,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2902.4791421946957,
-		"y": -664.6618514564572,
-		"zoom": 0.5
+		"x": -7178.7404181408,
+		"y": -2074.339325630079,
+		"zoom": 1.0570180405613803
 	}
 }
