@@ -1194,7 +1194,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-2863180b-1fb3-46df-b60d-c4d7eed7e0f3",
@@ -2101,7 +2101,7 @@
 						"passwordInput"
 					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#ff0080",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "Regiseter a new user",
@@ -2114,7 +2114,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-96042361-6391-4bf2-bf27-6a79224cfc33",
@@ -3427,8 +3427,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2359.5526067469095,
-		"y": -650.9070017041864,
+		"x": -4617.766899847978,
+		"y": -978.2358256675557,
 		"zoom": 0.6745512671698494
 	}
 }
