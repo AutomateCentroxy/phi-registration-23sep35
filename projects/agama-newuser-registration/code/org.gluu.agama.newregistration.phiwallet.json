@@ -2441,7 +2441,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2460,10 +2460,10 @@
 				},
 				"previousNodeId": "logNode-8655f3b0-c352-4e73-af6a-f241a0322b47",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP validation failed after 3 attempts\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
@@ -2474,7 +2474,9 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-f982b77b-1017-4f40-903c-a776f3cd326d",
