@@ -83,8 +83,7 @@ maxJourney = Repeat 6 times max
                                              When inum is not null
                                                   // Show user creation log
                                                   Log "@info User % has been created" inum
-                                                  RRF "__________" 
-                                                  Log "@ " __________
+                                                  uiFeedback.infoMessage = "User Account created successfully!"
                                              // Registration failed log
                                              Log "@info User registration failed. Error : %" E
                                         Otherwise
@@ -94,8 +93,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_wmcul = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_wmcul
+                              it_bvgnr = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_bvgnr
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -118,5 +117,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_pjuus = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_pjuus
+it_owswx = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_owswx
