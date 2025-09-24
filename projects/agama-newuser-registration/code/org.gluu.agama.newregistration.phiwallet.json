@@ -1048,7 +1048,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-4bb12047-c6fb-44d0-bb21-c643dc50b94b",
@@ -1067,21 +1067,22 @@
 				"previousNodeId": "whenNode-73e82e25-7e6f-4c01-a1ac-8c533d783458",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Password and Confirm password doesn't match\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Password and Confirm password doesn't match"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-b51d2939-c80b-4076-b616-df94d836e49a",
@@ -1099,20 +1100,27 @@
 				},
 				"previousNodeId": "logNode-4bb12047-c6fb-44d0-bb21-c643dc50b94b",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Password and confirm password not matching\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Error variable assignment"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-7663da69-41b6-444a-80a8-8ac1ad0620b3",
@@ -1681,8 +1689,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2816.8419044276316,
-		"y": -714.7151697627392,
+		"x": -2978.568920082294,
+		"y": -749.3026736579425,
 		"zoom": 0.7834971869493407
 	}
 }
