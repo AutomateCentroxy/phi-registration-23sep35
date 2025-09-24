@@ -1480,7 +1480,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "rrfNode-d73136ca-b1c2-453b-9da9-757e3c51cbc1",
@@ -3330,7 +3330,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "finishNode-67250fce-1116-436d-a949-42c46c2fdb9a",
@@ -5040,8 +5040,8 @@
 		}
 	],
 	"viewport": {
-		"x": -7426.84997648324,
-		"y": -1614.1379744633632,
-		"zoom": 0.8802590135631506
+		"x": -4127.039954172213,
+		"y": -1073.4691234494676,
+		"zoom": 0.7641882603825829
 	}
 }
