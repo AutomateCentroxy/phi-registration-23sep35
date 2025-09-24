@@ -2064,7 +2064,7 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "E-mail verification passed,",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2073,7 +2073,7 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-c73826f0-58bf-48de-aba6-de6923b93275",
@@ -3399,8 +3399,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5185.534542229546,
-		"y": -1163.262285482863,
+		"x": -4946.534542229546,
+		"y": -1137.262285482863,
 		"zoom": 0.6745512671698494
 	}
 }
