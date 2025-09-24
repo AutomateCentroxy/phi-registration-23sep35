@@ -2190,7 +2190,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3",
@@ -2209,21 +2209,22 @@
 				"previousNodeId": "whenNode-96042361-6391-4bf2-bf27-6a79224cfc33",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"User % has been created\" inum",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Show user creation log"
 				}
 			},
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
@@ -3413,8 +3414,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4946.534542229546,
-		"y": -1137.262285482863,
-		"zoom": 0.6745512671698494
+		"x": -8410.956314679097,
+		"y": -2017.7571950274382,
+		"zoom": 1.0570180405613803
 	}
 }
