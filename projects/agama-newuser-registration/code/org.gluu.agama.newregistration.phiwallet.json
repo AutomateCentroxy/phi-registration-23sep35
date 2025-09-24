@@ -2585,7 +2585,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2607,7 +2607,14 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "otpCreds.hasRequestedNewCode",
+							"operator": "is",
+							"dataValue": "\"yes\"",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -2621,7 +2628,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -4293,8 +4300,8 @@
 		}
 	],
 	"viewport": {
-		"x": -7343.666461757731,
-		"y": -1625.7545493014222,
+		"x": -7557.66646175773,
+		"y": -1639.7545493014222,
 		"zoom": 0.7834971869493407
 	}
 }
