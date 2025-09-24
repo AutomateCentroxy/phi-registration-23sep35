@@ -106,7 +106,8 @@ maxJourney = Repeat 6 times max
                                                        Otherwise
                                                             //  Add log entry with collected code in log file.
                                                             Log "@info Information provided by the user is : " otpCreds.code
-                                                            Call __________#__________ 
+                                                            //  Validate the OTP code provided by the user.
+                                                            otpValidationResult = Call userRegistrationService validateOTPCode phone otpCreds.code
                                                             Log "@ " __________
                                                             When 
                                                   Log "@info OTP verification loop completed"
@@ -122,8 +123,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_vwdzg = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_vwdzg
+                              it_trjct = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_trjct
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -146,5 +147,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_yzgez = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_yzgez
+it_xvwol = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_xvwol
