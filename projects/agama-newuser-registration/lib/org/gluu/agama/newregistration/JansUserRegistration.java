@@ -243,12 +243,12 @@ public class JansUserRegistration extends UserRegistration {
     }
 
 
-    public boolean markPhoneAsVerified(String username) {
+    public boolean markPhoneAsVerified(String userName) {
     try {
         UserService userService = CdiUtil.bean(UserService.class);
-        User user = getUser(UID, username);
+        User user = getUser(UID, userName);
         if (user == null) {
-            logger.error("User not found for username {}", username);
+            logger.error("User not found for username {}", userName);
             return false;
         }
 
@@ -256,10 +256,10 @@ public class JansUserRegistration extends UserRegistration {
         user.setAttribute(PHONE_VERIFIED, "true");
 
         userService.updateUser(user);
-        logger.info("Phone verification set to TRUE for UID {}", username);
+        logger.info("Phone verification set to TRUE for UID {}", userName);
         return true;
     } catch (Exception e) {
-        logger.error("Error setting phone verified TRUE for UID {}: {}", username, e.getMessage(), e);
+        logger.error("Error setting phone verified TRUE for UID {}: {}", userName, e.getMessage(), e);
         return false;
     }
 }
