@@ -2787,24 +2787,28 @@
 				"previousNodeId": "logNode-9ff5239e-9f2e-4a8f-b082-9735791342be",
 				"agamaData": {
 					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
+					"javaMethodName": "sendOTPCode",
+					"javaVariableName": "userRegistrationService",
 					"exceptionVariableField": "",
-					"callType": "Call static method",
-					"arguments": [],
+					"callType": "Call method on instance",
+					"arguments": [
+						"phone"
+					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Resend otp",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"asssignedVariableName": "resendHasSucceed"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "whenNode-9fcafb49-b951-40e3-b953-f706a1df1a35",
