@@ -77,6 +77,12 @@ maxJourney = Repeat 6 times max
                                              Log "@info Email Otp Verified"
                                              EmailOtpValidationResult = true
                                              Log "@info E-mail verification passed, initiating user provisioning flow " userInput
+                                             Call __________#__________ 
+                                             When 
+                                                  Log "@ " __________
+                                                  RRF "__________" 
+                                                  Log "@ " __________
+                                             Log "@ " __________
                                         Otherwise
                                              Log "@info Invalid OTP, Please Try Again!"
                                              // Invalid OTP, Please Try Again!
@@ -84,8 +90,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_atiea = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_atiea
+                              it_rpnhc = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_rpnhc
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -108,5 +114,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_wcqax = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_wcqax
+it_xvoml = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_xvoml
