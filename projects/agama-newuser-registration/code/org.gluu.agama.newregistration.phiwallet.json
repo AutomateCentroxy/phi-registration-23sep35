@@ -1558,7 +1558,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-335aef3f-fe26-4c3d-8e1d-cedd1b3c4f40",
@@ -1577,21 +1577,22 @@
 				"previousNodeId": "whenNode-72a8e0c4-3404-4a34-8cb7-cb5a39da0f2a",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Password provided by the user \" ",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "LOG",
 					"hasComment": true,
-					"comment": ""
+					"comment": " Add log entry with collected code in log file."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-40c5184e-eaf2-4277-adaa-9714d88dc5d1",
@@ -2462,8 +2463,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4333.184215412171,
-		"y": -1118.710917205525,
+		"x": -4518.184215412171,
+		"y": -1143.710917205525,
 		"zoom": 0.7834971869493407
 	}
 }
