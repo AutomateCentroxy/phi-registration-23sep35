@@ -46,7 +46,10 @@ maxJourney = Repeat 6 times max
                          When userPassword is confirmPassword
                               Log "@ " __________
                          Otherwise
-                              Log "@ " __________
+                              // Password and Confirm password doesn't match
+                              Log "@info Password and Confirm password doesn't match"
+                              // Error variable assignment
+                              uiFeedback.errorMessage = "Password and confirm password not matching"
                     Otherwise
                          uiFeedback.errorMessage = "Password must be at least 6 characters long and contain at least one special character"
                Otherwise
@@ -64,5 +67,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_exiax = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_exiax
+it_xpqdt = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_xpqdt
