@@ -42,7 +42,8 @@ maxJourney = Repeat 6 times max
                     isPasswordPolicyMatch = Call userRegistrationService passwordPolicyMatch userPassword
                     // if password policy match
                     When isPasswordPolicyMatch is true
-                         When 
+                         // Matching password 
+                         When userPassword is confirmPassword
                               Log "@ " __________
                          Otherwise
                               Log "@ " __________
@@ -63,5 +64,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_oloon = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_oloon
+it_exiax = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_exiax
