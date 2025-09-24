@@ -396,7 +396,7 @@
 						"userName"
 					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#80ffff",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "username policy check",
@@ -519,7 +519,7 @@
 						"email"
 					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#0080ff",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
@@ -792,7 +792,7 @@
 						"userName"
 					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#0080ff",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
@@ -805,7 +805,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "rrfNode-0ebdc0de-17d3-4b7c-8eed-04ef552e3087",
@@ -2302,7 +2302,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -3427,8 +3427,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1638.055583432349,
-		"y": -377.06026632086207,
-		"zoom": 0.5
+		"x": -1046.5268147225563,
+		"y": -93.55240831581204,
+		"zoom": 0.6745512671698494
 	}
 }
