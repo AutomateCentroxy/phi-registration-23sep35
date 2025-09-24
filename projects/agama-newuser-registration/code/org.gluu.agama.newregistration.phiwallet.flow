@@ -33,7 +33,8 @@ maxJourney = Repeat 6 times max
                userWithUid = Call userRegistrationService getUserEntityByUsername userName
                // user not found
                When userWithUid.empty is true
-                    RRF "__________" 
+                    // Retrieve user password from UI
+                    passwordInput = RRF "password.ftlh" uiFeedback
                     Call __________#__________ 
                     When 
                          When 
@@ -56,5 +57,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_lefok = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_lefok
+it_dahdi = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_dahdi
