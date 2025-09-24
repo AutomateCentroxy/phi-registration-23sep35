@@ -2850,7 +2850,7 @@
 				"width": 110,
 				"height": 59
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-76be041b-cfd8-4d9e-a541-fa828bdad760",
@@ -2903,13 +2903,13 @@
 				"previousNodeId": "whenNode-9fcafb49-b951-40e3-b953-f706a1df1a35",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"New OTP code send successfully!\" resendHasSucceed",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log code resend",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2917,7 +2917,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-8abdba2f-1599-4b2b-a497-7fc9cdd8f2f2",
@@ -2935,20 +2936,27 @@
 				},
 				"previousNodeId": "logNode-92466367-7d6a-461c-bed1-a6b8aaeae8bb",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"A new OTP code has been send to you on your mobile phone.\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback about the error message to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-f7fad136-bb20-4da4-9bbc-851e26d1b04d",
@@ -2967,13 +2975,13 @@
 				"previousNodeId": "whenNode-9fcafb49-b951-40e3-b953-f706a1df1a35",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Fail to resend new code to user. \" resendHasSucceed",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log error code",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2981,7 +2989,8 @@
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-8474bef5-77c8-480e-923d-b3efe9967d6f",
@@ -2999,20 +3008,27 @@
 				},
 				"previousNodeId": "logNode-f7fad136-bb20-4da4-9bbc-851e26d1b04d",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback about the otp resend error to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4517,8 +4533,8 @@
 		}
 	],
 	"viewport": {
-		"x": -9595.790211753458,
-		"y": -2378.7071740491206,
-		"zoom": 0.9100388240808991
+		"x": -13345.866974781104,
+		"y": -3373.827837616539,
+		"zoom": 1.2277356839150602
 	}
 }
