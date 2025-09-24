@@ -73,7 +73,7 @@ maxJourney = Repeat 6 times max
                                    Otherwise
                                         //  Add log entry with collected code in log file.
                                         Log "@info Password provided by the user " 
-                                        When 
+                                        When emailOtpCreds.passcode is otpCode
                                              Log "@ " __________
                                              Log "@ " __________
                                         Otherwise
@@ -83,8 +83,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_ktdjr = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_ktdjr
+                              it_emynj = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_emynj
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -107,5 +107,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_jupte = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_jupte
+it_rtnzs = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_rtnzs
