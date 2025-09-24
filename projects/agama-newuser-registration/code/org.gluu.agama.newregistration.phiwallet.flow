@@ -95,7 +95,7 @@ maxJourney = Repeat 6 times max
                                                        When otpCreds.hasRequestedNewCode is "yes"
                                                             // Log new code request
                                                             Log "@info User has requested a new code."
-                                                            Call __________#__________ 
+                                                            resendHasSucceed = Call userRegistrationService sendOTPCode phone
                                                             When 
                                                                  Log "@ " __________
                                                             Log "@ " __________
@@ -118,8 +118,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_jzeaa = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_jzeaa
+                              it_aidlt = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_aidlt
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -142,5 +142,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_hncfh = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_hncfh
+it_wsuaz = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_wsuaz
