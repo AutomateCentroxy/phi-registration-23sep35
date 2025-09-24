@@ -138,8 +138,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_idxie = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_idxie
+                              it_bvgwd = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_bvgwd
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -156,11 +156,11 @@ maxJourney = Repeat 6 times max
                // User already registered with UID
                Log "@info User already registered with uid: %" userName
                // User already registered with UID
-               uiFeedback.errorMessage = "User already registered with this UserName"
+               uiFeedback.errorMessage = "User already registered with this Email"
      Otherwise
           uiFeedback.errorMessage = "Name should contain only alphabets"
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_futwj = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_futwj
+it_islqy = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_islqy
