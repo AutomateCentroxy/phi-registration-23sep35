@@ -840,7 +840,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-f1d9bd8c-97a0-4362-985e-d7a35c8ff8ac",
@@ -3176,7 +3176,7 @@
 					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "phonenumber",
 					"hasComment": true,
 					"comment": "",
 					"asssignedVariableName": "phoneVerified"
@@ -3186,7 +3186,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "rrfNode-126362ff-3b91-4e20-a274-e94cdb43d81e",
@@ -4983,8 +4983,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3671.5847015232584,
-		"y": -775.8853923424947,
-		"zoom": 1.3085780714550095
+		"x": -23213.620560197756,
+		"y": -5032.615620437451,
+		"zoom": 2
 	}
 }
