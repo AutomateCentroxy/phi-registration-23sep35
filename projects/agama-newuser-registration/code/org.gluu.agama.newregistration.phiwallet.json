@@ -2335,7 +2335,7 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2354,9 +2354,15 @@
 				},
 				"previousNodeId": "logNode-f3bd4b77-a3ee-4e8f-9a9a-722e64ab61bd",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "otpValidationResult"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
+					"nodeColor": "#ff8040",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
@@ -2367,7 +2373,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "repeatNode-93d232a6-f964-438c-ac5a-5668051188e8",
