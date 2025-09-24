@@ -2224,28 +2224,32 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": true
+			"selected": false
 		},
 		{
-			"id": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
-			"type": "rrfNode",
+			"id": "assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf",
+			"type": "assignmentNode",
 			"position": {
 				"x": 8696.239481571527,
 				"y": 2105.463811759513
 			},
 			"data": {
-				"id": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
-				"type": "rrfNode",
+				"id": "assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf",
+				"type": "assignmentNode",
 				"position": {
 					"x": 8696.239481571527,
 					"y": 2105.463811759513
 				},
 				"previousNodeId": "logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3",
 				"agamaData": {
-					"assignments": [],
-					"nodeIcon": "ph:globe-simple",
-					"templatePath": "",
-					"asssignedVariableName": "",
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"User Account created successfully!\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
@@ -2257,39 +2261,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
-		},
-		{
-			"id": "logNode-d7754412-c923-498a-9b48-b91c6c1e11f8",
-			"type": "logNode",
-			"position": {
-				"x": 8946.239481571527,
-				"y": 2105.463811759513
 			},
-			"data": {
-				"id": "logNode-d7754412-c923-498a-9b48-b91c6c1e11f8",
-				"type": "logNode",
-				"position": {
-					"x": 8946.239481571527,
-					"y": 2105.463811759513
-				},
-				"previousNodeId": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
-				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 124
-			}
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3375,10 +3348,10 @@
 			"sourceHandle": "source_whenNode-96042361-6391-4bf2-bf27-6a79224cfc33_success"
 		},
 		{
-			"id": "logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3-rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
+			"id": "logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3-assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf",
 			"type": "default",
 			"source": "logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3",
-			"target": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
+			"target": "assignmentNode-9956f5b6-79f0-4638-bbb3-cb667fcd16bf",
 			"labelBgPadding": [
 				8,
 				4
@@ -3392,30 +3365,11 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-4c201d0e-d7b7-43b2-84c4-98d7b4ebcac3"
-		},
-		{
-			"id": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7-logNode-d7754412-c923-498a-9b48-b91c6c1e11f8",
-			"type": "default",
-			"source": "rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7",
-			"target": "logNode-d7754412-c923-498a-9b48-b91c6c1e11f8",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_rrfNode-82c093a8-40db-41cf-9756-46db60f6b4d7"
 		}
 	],
 	"viewport": {
-		"x": -8410.956314679097,
-		"y": -2017.7571950274382,
-		"zoom": 1.0570180405613803
+		"x": -10262.575440781562,
+		"y": -2263.682309794677,
+		"zoom": 1.2277356839150602
 	}
 }
