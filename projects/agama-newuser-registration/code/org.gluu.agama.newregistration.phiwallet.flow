@@ -111,6 +111,9 @@ maxJourney = Repeat 6 times max
                                                             // Add log entry withvalidation result in log file.
                                                             Log "@info OTP validation result is:" otpValidationResult
                                                             When 
+                                                                 Log "@ " __________
+                                                            Otherwise
+                                                                 Log "@ " __________
                                                   Log "@info OTP verification loop completed"
                                                   Log "@info OTP validation failed after 3 attempts"
                                                   it_otpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
@@ -124,8 +127,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_ezkoh = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_ezkoh
+                              it_tvema = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_tvema
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -148,5 +151,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_urhpe = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_urhpe
+it_omygq = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_omygq
