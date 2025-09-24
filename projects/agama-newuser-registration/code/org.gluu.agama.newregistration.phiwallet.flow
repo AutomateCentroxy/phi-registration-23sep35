@@ -51,7 +51,7 @@ maxJourney = Repeat 6 times max
                               Log "@info OTP generated and send to: " email
                               // EmailOtpValidationResult = flase
                               EmailOtpValidationResult = false
-                              Repeat __________ times max
+                              EmailMax = Repeat 4 times max
                                    Log "@ " __________
                                    RRF "__________" 
                                    When 
@@ -59,6 +59,7 @@ maxJourney = Repeat 6 times max
                                         Call __________#__________ 
                                    Otherwise
                                         Log "@ " __________
+                              uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               Log "@ " __________
                               Finish __________
                          Otherwise
@@ -83,5 +84,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_oealq = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_oealq
+it_tsnke = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_tsnke
