@@ -805,7 +805,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "rrfNode-0ebdc0de-17d3-4b7c-8eed-04ef552e3087",
@@ -911,7 +911,7 @@
 						"userPassword"
 					],
 					"nodeIcon": "material-symbols:code",
-					"nodeColor": "",
+					"nodeColor": "#ff80ff",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
@@ -924,7 +924,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-cddb67af-dd30-4a81-8d29-cd59dbc3b9af",
@@ -3427,8 +3427,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1046.5268147225563,
-		"y": -93.55240831581204,
-		"zoom": 0.6745512671698494
+		"x": -2852.14394549819,
+		"y": -668.4469491899013,
+		"zoom": 0.9100388240808991
 	}
 }
