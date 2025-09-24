@@ -34,6 +34,7 @@ maxJourney = Repeat 6 times max
                userWithUid = Call userRegistrationService getUserEntityByUsername userName
                // user not found
                When userWithUid.empty is true
+                    uiFeedback.errorMessage = null
                     // Retrieve user password from UI
                     passwordInput = RRF "password.ftlh" uiFeedback
                     // Assign  password  to a variable
@@ -138,8 +139,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_bvgwd = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_bvgwd
+                              it_igjtd = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_igjtd
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -162,5 +163,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_islqy = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_islqy
+it_hdeek = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_hdeek
