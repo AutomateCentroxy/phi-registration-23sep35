@@ -46,6 +46,8 @@ public class JansUserRegistration extends UserRegistration {
     private static final String EXT_ATTR = "jansExtUid";
     private static final String MOBILE = "mobile";
     private static final String LANG = "lang";
+    private static final String EMAIL_VERIFIED = "emailVerified";
+    private static final String PHONE_VERIFIED = "phoneNumberVerified";
     private static final int OTP_LENGTH = 6;
     public static final int OTP_CODE_LENGTH = 6;
     private static final String SUBJECT_TEMPLATE = "Here's your verification code: %s";
@@ -59,19 +61,19 @@ public class JansUserRegistration extends UserRegistration {
     // private HashMap<String, String> userCodes = new HashMap<>();
     private static final Map<String, String> userCodes = new HashMap<>();
 
-    // â No-arg constructor (required by Agama/CDI)
+    // ✅ No-arg constructor (required by Agama/CDI)
     public JansUserRegistration() {
         this.flowConfig = new HashMap<>();
         logger.info("Initialized JansUserRegistration using default constructor (no config).");
     }
 
-    // â Constructor used by getInstance()
+    // ✅ Constructor used by getInstance()
     private JansUserRegistration(Map config) {
         this.flowConfig = config;
         logger.info("Using Twilio account SID: {}", config.get("ACCOUNT_SID"));
     }
 
-    // â Singleton accessor
+    // ✅ Singleton accessor
     public static UserRegistration getInstance(Map config) {
         if (INSTANCE == null) {
             INSTANCE = new JansUserRegistration(config);
@@ -103,7 +105,7 @@ public class JansUserRegistration extends UserRegistration {
 
         StringBuilder otpBuilder = new StringBuilder();
         for (int i = 0; i < OTP_LENGTH; i++) {
-            otpBuilder.append(RAND.nextInt(10)); // Generates 0â9
+            otpBuilder.append(RAND.nextInt(10)); // Generates 0–9
         }
         String otp = otpBuilder.toString();
 
@@ -174,7 +176,7 @@ public class JansUserRegistration extends UserRegistration {
         try {
             logger.info("Validating OTP code {} for phone {}", code, phone);
             String storedCode = userCodes.getOrDefault(phone, "NULL");
-            logger.info("User submitted code: {} â Stored code: {}", code, storedCode);
+            logger.info("User submitted code: {} — Stored code: {}", code, storedCode);
             if (storedCode.equalsIgnoreCase(code)) {
                 userCodes.remove(phone); // Remove after successful validation
                 return true;
@@ -216,6 +218,11 @@ public class JansUserRegistration extends UserRegistration {
         user.setAttribute("mobile", phoneNumber);
         user.setAttribute("lang", lang);
 
+        // ✅ compulsory: email verified at creation time
+        user.setAttribute(EMAIL_VERIFIED, "true");
+        // ✅ phone not yet verified
+        user.setAttribute(PHONE_VERIFIED, "false");
+
         if (StringHelper.isNotEmpty(combined.get("residenceCountry"))) {
             user.setAttribute("residenceCountry", combined.get("residenceCountry"));
         }
@@ -234,6 +241,29 @@ public class JansUserRegistration extends UserRegistration {
         logger.info(" User created with UID: {}", uid);
         return getSingleValuedAttr(user, INUM_ATTR);
     }
+
+
+    public boolean markPhoneAsVerified(String uid) {
+    try {
+        UserService userService = CdiUtil.bean(UserService.class);
+        User user = getUser(UID, uid);
+        if (user == null) {
+            logger.error("User not found for UID {}", uid);
+            return false;
+        }
+
+        // 🔑 Just set to true
+        user.setAttribute(PHONE_VERIFIED, "true");
+
+        userService.updateUser(user);
+        logger.info("Phone verification set to TRUE for UID {}", uid);
+        return true;
+    } catch (Exception e) {
+        logger.error("Error setting phone verified TRUE for UID {}: {}", uid, e.getMessage(), e);
+        return false;
+    }
+}
+
 
     public Map<String, String> getUserEntityByMail(String email) {
         return extractUserInfo(getUser(MAIL, email), email);
