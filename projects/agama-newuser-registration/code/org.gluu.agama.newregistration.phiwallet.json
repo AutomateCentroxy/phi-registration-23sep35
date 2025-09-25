@@ -331,7 +331,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-46a62f69-11b3-4c3d-8629-44e5f61f6abb",
@@ -1159,8 +1160,8 @@
 			"id": "callNode-37eb1346-1105-402e-81fa-0ba21285c285",
 			"type": "callNode",
 			"position": {
-				"x": 4946.239481571527,
-				"y": 1531.463811759513
+				"x": 4950.482122258646,
+				"y": 1532.878025321886
 			},
 			"data": {
 				"id": "callNode-37eb1346-1105-402e-81fa-0ba21285c285",
@@ -1177,7 +1178,8 @@
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"arguments": [
-						"email"
+						"email",
+						"lang"
 					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "#ff0000",
@@ -1193,7 +1195,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "logNode-2863180b-1fb3-46df-b60d-c4d7eed7e0f3",
@@ -1480,7 +1483,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "rrfNode-d73136ca-b1c2-453b-9da9-757e3c51cbc1",
@@ -1563,7 +1566,7 @@
 			"id": "logNode-335aef3f-fe26-4c3d-8e1d-cedd1b3c4f40",
 			"type": "logNode",
 			"position": {
-				"x": 6946.239481571527,
+				"x": 6947.653695133899,
 				"y": 1589.463811759513
 			},
 			"data": {
@@ -1576,7 +1579,7 @@
 				"previousNodeId": "whenNode-72a8e0c4-3404-4a34-8cb7-cb5a39da0f2a",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "\"Password provided by the user \" ",
+					"logMessage": "\"OTP provided by the user \" ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -1591,7 +1594,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "logNode-40c5184e-eaf2-4277-adaa-9714d88dc5d1",
@@ -1819,7 +1823,7 @@
 			"id": "assignmentNode-4577da3d-aa22-471a-ae4a-709a6f9b5550",
 			"type": "assignmentNode",
 			"position": {
-				"x": 7946.239481571527,
+				"x": 7948.105547554601,
 				"y": 2297.463811759513
 			},
 			"data": {
@@ -1851,7 +1855,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "whenNode-848f25b2-038f-41dd-8e98-f4f6e0838643",
@@ -5040,8 +5045,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4127.039954172213,
-		"y": -1073.4691234494676,
-		"zoom": 0.7641882603825829
+		"x": -3239.1417744170467,
+		"y": -957.0146743099074,
+		"zoom": 0.7071067811865489
 	}
 }
