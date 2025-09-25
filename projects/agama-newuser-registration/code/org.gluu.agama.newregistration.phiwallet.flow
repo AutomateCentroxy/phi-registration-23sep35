@@ -48,7 +48,7 @@ maxJourney = Repeat 6 times max
                          When userPassword is confirmPassword
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
-                              otpCode = Call userRegistrationService sendEmail email
+                              otpCode = Call userRegistrationService sendEmail email lang
                               // The OTP Code has been send to user.
                               Log "@info OTP generated and send to: " email
                               // EmailOtpValidationResult = flase
@@ -74,7 +74,7 @@ maxJourney = Repeat 6 times max
                                         uiFeedback.errorMessage = "A new OTP code has been send to you on your Email"
                                    Otherwise
                                         //  Add log entry with collected code in log file.
-                                        Log "@info Password provided by the user " 
+                                        Log "@info OTP provided by the user " 
                                         When emailOtpCreds.passcode is otpCode
                                              Log "@info Email Otp Verified"
                                              EmailOtpValidationResult = true
@@ -140,8 +140,8 @@ maxJourney = Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@info Email OTP verification loop completed"
-                              it_ldtsj = {success:false, error: "User update flow reached max attempts. Try later"}
-                              Finish it_ldtsj
+                              it_mbhqr = {success:false, error: "User update flow reached max attempts. Try later"}
+                              Finish it_mbhqr
                          Otherwise
                               // Password and Confirm password doesn't match
                               Log "@info Password and Confirm password doesn't match"
@@ -164,5 +164,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_najfr = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_najfr
+it_oitpr = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_oitpr
